@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import RotatingQuotes from "@/components/RotatingQuotes";
 import chessHero from "@/assets/chess-hero.jpg";
 
 const HeroSection = () => {
@@ -15,11 +16,11 @@ const HeroSection = () => {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-          Blackjacks Chess Club
+          Blackjacks Chess Academy
         </h1>
-        <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-          Where strategy meets community
-        </p>
+        <div className="mb-8">
+          <RotatingQuotes />
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link to="/events">
             <Button className="btn-hero text-lg px-8 py-3">
