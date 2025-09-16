@@ -84,8 +84,8 @@ const About = () => {
                 },
                 {
                   icon: Target,
-                  title: "Cape Verde International Event",
-                  status: "Competing",
+                  title: "African Chess Junior Championship 2025",
+                  status: "Competing in Cape Verde",
                   description: "Two of our finest players showcasing their skills on the international stage."
                 }
               ].map((achievement, index) => (

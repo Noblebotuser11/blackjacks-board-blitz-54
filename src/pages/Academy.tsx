@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RotatingQuotes from "@/components/RotatingQuotes";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -81,14 +82,20 @@ const Academy = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-chess-black to-chess-black/90 text-chess-white pt-20 pb-16">
+      <section 
+        className="relative min-h-[60vh] flex items-center justify-center text-center text-white pt-20"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/chess-hero.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Blackjacks Chess Academy
           </h1>
-          <p className="text-xl md:text-2xl text-chess-white/90 max-w-3xl mx-auto">
-            Empowering Minds Through Chess
-          </p>
+          <RotatingQuotes />
         </div>
       </section>
 

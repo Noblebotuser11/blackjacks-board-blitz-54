@@ -25,7 +25,7 @@ const AchievementsSection = () => {
     {
       icon: Medal,
       title: "International Competition",
-      description: "2 players competing at the Cape Verde event",
+      description: "2 players competing at the African Chess Junior Championship 2025 in Cape Verde",
       highlight: "Global Presence"
     }
   ];

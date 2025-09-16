@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, Trophy } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import blackjacksLogo from "@/assets/blackjacks-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <NavLink to="/" className="flex items-center space-x-2 group">
-            <Trophy className="h-8 w-8 text-accent transition-transform group-hover:scale-110" />
+            <img 
+              src={blackjacksLogo} 
+              alt="Blackjacks Chess Club" 
+              className="h-8 w-8 transition-transform group-hover:scale-110" 
+            />
             <span className="font-playfair font-bold text-xl">Blackjacks Chess Club</span>
           </NavLink>
 
