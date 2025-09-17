@@ -24,6 +24,14 @@ const Members = () => {
       achievements: ["Administrative Leadership", "Community Development"],
       national: true,
       image: "/placeholder.svg"
+    },
+    {
+      name: "Willmore Pietersen",
+      role: "Club Leader",
+      level: "Expert",
+      achievements: ["Team Leadership", "Strategic Planning"],
+      national: true,
+      image: "/placeholder.svg"
     }
   ];
 
@@ -325,14 +333,7 @@ const Members = () => {
     }
   ];
 
-  const additionalPlayers = [
-    { name: "Michael Chen", team: "B", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Consistent Performance", "Team Support"], international: false, national: false },
-    { name: "Sarah Williams", team: "B", level: "Expert", national: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Regional Competitor", "Strategic Play"], international: false, club: false },
-    { name: "Ahmed Hassan", team: "C", level: "Class B Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Rising Talent", "Dedicated Training"], international: false, national: false },
-    { name: "Lisa Johnson", team: "C", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Tournament Participant", "Skill Development"], international: false, national: false },
-    { name: "Robert Taylor", team: "A", level: "Expert", national: true, image: "/placeholder.svg", role: "Team Player", achievements: ["National Competitor", "Tactical Excellence"], international: false, club: false },
-    { name: "Maria Garcia", team: "B", level: "Class A Player", club: true, image: "/placeholder.svg", role: "Team Player", achievements: ["Club Regular", "Improvement Focus"], international: false, national: false }
-  ];
+  const additionalPlayers = [];
 
   const getMemberBadge = (member: any) => {
     if (member.international) {
