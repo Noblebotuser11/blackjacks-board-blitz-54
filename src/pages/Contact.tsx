@@ -41,12 +41,17 @@ const Contact = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-b from-muted to-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+      <section 
+        className="pt-20 pb-16 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/src/assets/page-header-bg.jpg')`
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6 text-white">
             Get In <span className="text-accent">Touch</span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-white/90 leading-relaxed">
             Ready to join the champions? Have questions? We'd love to hear from you.
           </p>
         </div>
@@ -179,48 +184,17 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="font-medium">Tuesday Practice</span>
-                    <span className="text-muted-foreground">18:00 - 21:00</span>
+                    <span className="font-medium">Friday Training</span>
+                    <span className="text-muted-foreground">14:00 - 16:00</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="font-medium">Thursday Training</span>
-                    <span className="text-muted-foreground">19:00 - 21:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Saturday Tournaments</span>
-                    <span className="text-muted-foreground">10:00 - 17:00</span>
+                    <span className="font-medium">Saturday League Games</span>
+                    <span className="text-muted-foreground">09:00 - 18:00</span>
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-4">
                   * All skill levels welcome. Boards and pieces provided.
                 </p>
-              </div>
-
-              {/* Membership Info */}
-              <div className="championship-card">
-                <h3 className="font-playfair text-xl font-semibold mb-4">
-                  Membership Information
-                </h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between">
-                    <span>Annual Membership</span>
-                    <span className="font-semibold">R500</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Student Rate</span>
-                    <span className="font-semibold">R250</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Family Package</span>
-                    <span className="font-semibold">R1200</span>
-                  </div>
-                </div>
-                <div className="mt-4 p-3 bg-muted rounded-lg">
-                  <p className="text-xs text-muted-foreground">
-                    Membership includes access to all regular events, training sessions, 
-                    equipment use, and tournament entry discounts.
-                  </p>
-                </div>
               </div>
             </div>
           </div>

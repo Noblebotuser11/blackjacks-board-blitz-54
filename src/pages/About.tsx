@@ -2,6 +2,7 @@ import { Trophy, Users, Target, Award } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import trophyImage from "@/assets/trophy.jpg";
+import pageHeaderBg from "@/assets/page-header-bg.jpg";
 
 const About = () => {
   return (
@@ -9,12 +10,17 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-b from-muted to-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+      <section 
+        className="pt-20 pb-16 relative bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${pageHeaderBg})`
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6 text-white">
             About <span className="text-accent">Blackjacks</span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-xl text-white/90 leading-relaxed">
             A legacy of strategic excellence and competitive mastery in the heart of Cape Town
           </p>
         </div>

@@ -31,25 +31,8 @@ const Navigation = () => {
             <span className="font-playfair font-bold text-xl">Blackjacks Chess Club</span>
           </NavLink>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors hover:text-accent ${
-                    isActive ? "text-accent border-b-2 border-accent" : "text-chess-white"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Hamburger menu button for all devices */}
+          <div>
             <Button
               variant="ghost"
               size="sm"
@@ -61,10 +44,10 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Hamburger Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-chess-black/95 border-t border-accent/20">
+          <div className="absolute top-full left-0 w-full z-40">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-chess-black/95 backdrop-blur-sm border-t border-accent/20">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}

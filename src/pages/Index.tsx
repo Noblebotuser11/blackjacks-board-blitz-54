@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import AcademyTeaser from "@/components/AcademyTeaser";
 import NewsPreview from "@/components/NewsPreview";
+import PagePreviews from "@/components/PagePreviews";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <AchievementsSection />
       <AcademyTeaser />
       <NewsPreview />
+      <PagePreviews />
       <Footer />
     </div>
   );

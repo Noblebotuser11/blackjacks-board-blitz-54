@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RotatingQuotes from "@/components/RotatingQuotes";
 import { Button } from "@/components/ui/button";
+import pageHeaderBg from "@/assets/page-header-bg.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
   Users, 
@@ -85,7 +86,7 @@ const Academy = () => {
       <section 
         className="relative min-h-[60vh] flex items-center justify-center text-center text-white pt-20"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/chess-hero.jpg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${pageHeaderBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
